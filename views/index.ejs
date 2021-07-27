@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <script src="https://kit.fontawesome.com/e14357d339.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;1,500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles.css">
+    <title>My Wallet</title>
+</head>
+<body>
+    <div class="jumbtron jumbtron-fluid text-white">
+        
+        <div class="container">
+            <h1 class="display-4 font-weight-bold">MY WALLET</h1>
+            <p class="lead">FOR THE BEST MANAGEMENT OF YOUR WALLET</p>
+        </div>
+    </div>
+    <div class="main">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="login-card">
+                        <h2 class="text-center mb-4">Sign In</h2>
+                        <form method="POST">
+                            <% if(i==2){ %>
+                            <p class="text-danger">Account already Exist</p>
+                            <% } %>
+                            <p>
+                                <label for="email">Email</label>
+                                <input type="text" class="form-input" name="user_email" placeholder="Enter your email address" required>
+                            </p>
+                            <p>
+                                <label for="password">Password</label>
+                                <input type="password" class="form-input" name="user_password" placeholder="Enter your password" required>
+                            </p>
+                            <button type="submit" class="btn btn-primary" value="1" name="submitform">Sign In</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="login-card">
+                        <h2 class="text-center mb-4">Log In</h2>
+                        <form method="POST">
+                            <% if(i==3){ %>
+                            <p class="text-danger">Incorrect email and password</p>
+                            <% } %>
+                            <p>
+                                <label for="email">Email</label>
+                                <input type="text" class="form-input" name="user_email" placeholder="Enter your email address" required>
+                            </p>
+                            <p>
+                                <label for="password">Password</label>
+                                <input type="password" class="form-input" name="user_password" placeholder="Enter your password" required>
+                            </p>
+                            <button type="submit" class="btn btn-primary" value="2" name="submitform">Log In</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+   
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</body>
+</html>
